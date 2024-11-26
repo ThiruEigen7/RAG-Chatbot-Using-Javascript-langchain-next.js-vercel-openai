@@ -39,5 +39,24 @@ This project is a **Retrieval-Augmented Generation (RAG) Chatbot** that provides
 
 ### Install Dependencies
 
-npm install
+npm install @datastax/astra-db-ts @langchain/community axios dotenv puppeteer langchain
 
+### Key Functionalities
+   Chat Interface:
+        Users can ask questions in the input box, and the chatbot generates responses.
+    Prompt Suggestions:
+        Predefined prompts for quicker user interactions.
+    Real-Time Loading Indicator:
+        Displays when fetching data or generating responses.
+
+### 📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+### 📩 Contact
+
+email: suryathirupks@gmail.com
+
+### Reference 
+
+link : https://www.youtube.com/watch?v=d-VKYF4Zow0
