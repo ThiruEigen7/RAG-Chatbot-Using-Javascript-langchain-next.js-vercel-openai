@@ -1,0 +1,170 @@
+*{
+    font-family: Verdana,Tahoma, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/FinGPTbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main{
+    width:80vw;
+    height:80vw;
+    background: linear-gradient(to bottom,#fdfdfd,#faf8ff);
+    border-radius:15px;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:20px;
+    text-align: center;
+    color:#000000;
+    overflow:hidden;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 70vw;
+        height: 70vh;
+    }
+}
+
+section{
+    width:100%; 
+}
+
+section.populated{
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    overflow: scroll;
+}
+
+.starter-text{
+    padding: 0 80px;
+}
+form{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    border-top:#828282 solid 2px;
+    padding-top: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow:hidden;
+}
+
+input.questionbox{
+    width: 85%;
+    padding: 10px;
+    font-size: 15px;
+    color:#383838;
+    border:none;
+}
+
+input[type=submit]{
+    width:15%;
+    padding:10px;
+    font-size: 15px;
+    border:none;
+    color:#fff;
+    background-color: #411b8d;
+}
+
+input:focus{
+    outline:none;
+}
+
+
+
+.bub{
+    margin: 9px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    color: #383838;
+    box-shadow: #959da533 0 8px 24px;
+    width: 80%;
+    text-align: left;
+}
+
+.bub.user{
+    border-radius: 20px 20px 0 20px;
+    background-color: #E1F4FFFF;
+    margin-left: auto;
+}
+
+.bub.assistant{
+    border-radius:20px 20px 20px 0;
+    background-color: #dce7ff;
+}
+
+
+.prompt-sug{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.prompt-sg-btn{
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    border-radius: 25px;
+    color: #383838;
+    box-shadow: #959da533 0 8px 24px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.prompt-sg-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.prompt-sg-btn:active {
+    transform: translateY(1px);
+}
+
+.loader {
+    margin: 10px;
+    width: 60px;
+    aspect-ratio: 1;
+    background: 
+        no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 0 50%,
+        no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 50% 50%,
+        no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 100% 50%;
+    background-size: 33% 100%;
+    animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    33% {
+        background-size: 33% 0, 33% 100%, 33% 100%;
+    }
+    50% {
+        background-size: 33% 100%, 33% 0, 33% 100%;
+    }
+    66% {
+        background-size: 33% 100%, 33% 100%, 33% 0;
+    }
+}
