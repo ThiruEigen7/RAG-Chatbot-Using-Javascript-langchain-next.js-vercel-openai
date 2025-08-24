@@ -1,4 +1,4 @@
-# RAG Chatbot Using JavaScript (LangChain, Next.js, Vercel, OpenAI)
+# RAG Chatbot Using JavaScript (LangChain, Next.js, OpenAI)
 
 This project is a **Retrieval-Augmented Generation (RAG) Chatbot** that provides accurate and contextual answers by leveraging OpenAI's language model, LangChain, and a custom database. It is built using **Next.js**, **JavaScript**, and deployed on **Vercel**. 
 
@@ -15,7 +15,6 @@ This project is a **Retrieval-Augmented Generation (RAG) Chatbot** that provides
 ## 🛠️ Tech Stack
 - **Frontend:** Next.js (React Framework)
 - **Backend:** LangChain and OpenAI API
-- **Deployment:** Vercel
 - **Database:** Datastax astra
 - **Styling:** CSS and custom components
 
